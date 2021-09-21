@@ -1,13 +1,6 @@
-.navbar {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../assets/img/landing.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
-.masthead {
-  padding-top: 10.5rem;
+.masthead,
+.promo {
+  padding-top: 10rem;
   padding-bottom: 6rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(../assets/img/landing.jpg);
@@ -19,4 +12,8 @@
 
 .landing-head {
   color: white;
+}
+
+.myfooter {
+  background-color: #501e27;
 }
