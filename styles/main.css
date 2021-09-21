@@ -1,7 +1,7 @@
 .masthead,
 .promo {
   padding-top: 10rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(../assets/img/landing.jpg);
   background-repeat: no-repeat;
