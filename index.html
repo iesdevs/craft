@@ -1,622 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Craft Allies" />
+    <meta itemprop="datePublished" content="2021-04-30" id="date" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="author" content="Craft Allies" />
-  <meta itemprop="datePublished" content="2021-04-30" id="date" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!--Meta for link preview-->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      name="og:url"
+      property="og:url"
+      content="https://iesdevs.github.io/craft/"
+    />
+    <meta name="og:locale" property="og:locale" content="en_US" />
+    <meta name="og:title:" property="og:title" content="Craft Allies @ IESCE" />
+    <meta
+      name="description"
+      property="og:description"
+      content="A social space where independent, talented and creative entrepreneurs exhibit their handmade projects."
+    />
+    <meta property="og:image" content="assets/img/meta/logo.jpg" />
 
-  <!--Meta for link preview-->
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta name="og:url" property="og:url" content="https://iesdevs.github.io/craft/" />
-  <meta name="og:locale" property="og:locale" content="en_US" />
-  <meta name="og:title:" property="og:title" content="Craft Allies @ IESCE" />
-  <meta name="description" property="og:description"
-    content="A social space where independent, talented and creative entrepreneurs exhibit their handmade projects." />
-  <meta property="og:image" content="assets/img/meta/logo.jpg" />
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      property="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:url"
+      property="twitter:url"
+      content="https://iesdevs.github.io/craft/"
+    />
+    <meta
+      name="twitter:title"
+      property="twitter:title"
+      content="Craft Allies @ IESCE"
+    />
+    <meta
+      name="twitter:description"
+      property="twitter:description"
+      content="A social space where independent, talented and creative entrepreneurs exhibit their handmade projects."
+    />
+    <meta
+      name="twitter:image"
+      property="twitter:image"
+      content="assets/img/meta/logo.jpg"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" property="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" property="twitter:url" content="https://iesdevs.github.io/craft/" />
-  <meta name="twitter:title" property="twitter:title" content="Craft Allies @ IESCE" />
-  <meta name="twitter:description" property="twitter:description"
-    content="A social space where independent, talented and creative entrepreneurs exhibit their handmade projects." />
-  <meta name="twitter:image" property="twitter:image" content="assets/img/meta/logo.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Inter:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Inter:wght@100;300;400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <!-- Core & Custom theme CSS-->
+    <link href="styles/bootswatch.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
 
-  <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <title>Craft Allies</title>
+  </head>
 
-  <!-- Core & Custom theme CSS-->
-  <link href="styles/bootswatch.css" rel="stylesheet" />
-  <link href="styles/main.css" rel="stylesheet" />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img-fluid"
+            width="100px"
+            src="assets/img/craft-allies.png"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <title>Craft Allies</title>
-</head>
-
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="img-fluid" width="100px" src="assets/img/craft-allies.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
-        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mynav-itm" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Products</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Paintings</a>
-              <a class="dropdown-item" href="#">Paintings</a>
-              <a class="dropdown-item" href="#">Flower Bouquets</a>
-              <a class="dropdown-item" href="#">Gift Hampers</a>
-              <a class="dropdown-item" href="#">Wooden Crafts</a>
-              <a class="dropdown-item" href="#">Bottle Arts</a>
-              <a class="dropdown-item" href="#">Calligraphy</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">More...</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead bgimg text-center">
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="row align-items-center g-lg-5 py-5">
-        <div class="col-lg-7 text-light text-center text-lg-start">
-          <h1 class="display-4 fw-bold lh-1 mb-3 landing-head">Craft Allies</h1>
-          <p class="col-lg-10 fs-4">A social space where independent, talented and creative entrepreneurs exhibit their
-            handmade projects. The motive is nurture the brilliance of our crafters and bring out their talents to
-            explore better opportunities and showcasing their beautiful handmade art forms and projects.
-          </p>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control email-text" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control password-text" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="checkbox text-light mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>
-            </div>
-            <p>Already a member? • <a href="#">Log In</a></p>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
-            <hr class="my-4">
-            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mynav-itm" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Products</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Paintings</a>
+                <a class="dropdown-item" href="#">Paintings</a>
+                <a class="dropdown-item" href="#">Flower Bouquets</a>
+                <a class="dropdown-item" href="#">Gift Hampers</a>
+                <a class="dropdown-item" href="#">Wooden Crafts</a>
+                <a class="dropdown-item" href="#">Bottle Arts</a>
+                <a class="dropdown-item" href="#">Calligraphy</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">More...</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <section>
-    <div class="text-center container py-5">
-      <h1 class="mt-4 mb-5"><strong>Bestsellers</strong></h1>
+    <header class="masthead bgimg text-center">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-light text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3 landing-head">
+              Craft Allies
+            </h1>
+            <p class="col-lg-10 fs-4">
+              A social space where independent, talented and creative
+              entrepreneurs exhibit their handmade projects. The motive is
+              nurture the brilliance of our crafters and bring out their talents
+              to explore better opportunities and showcasing their beautiful
+              handmade art forms and projects.
+            </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control email-text"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control password-text"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="checkbox text-light mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+              </div>
+              <p>Already a member? • <a href="#">Log In</a></p>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">
+                Sign Up
+              </button>
+              <hr class="my-4" />
+              <small class="text-muted"
+                >By clicking Sign up, you agree to the terms of use.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/belt.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
-                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+    <section>
+      <div class="text-center container py-5">
+        <h1 class="mt-4 mb-5"><strong>Bestsellers</strong></h1>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div
+                class="
+                  bg-image
+                  hover-zoom
+                  ripple ripple-surface ripple-surface-light
+                "
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/belt.jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    >
+                      <h5><span class="badge bg-primary ms-2">New</span></h5>
+                    </div>
                   </div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">₹61.99</h6>
+              </div>
             </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">₹61.99</h6>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="
+                  bg-image
+                  hover-zoom
+                  ripple ripple-surface ripple-surface-light
+                "
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(4).jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    >
+                      <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">₹61.99</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-zoom ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    >
+                      <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
+                </h6>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(4).jpg"
-                class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
-                    <h5><span class="badge bg-success ms-2">Eco</span></h5>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-zoom ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(23).jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    >
+                      <h5>
+                        <span class="badge bg-success ms-2">Eco</span
+                        ><span class="badge bg-danger ms-2">-10%</span>
+                      </h5>
+                    </div>
                   </div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
-            </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">₹61.99</h6>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
+                </h6>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg"
-                class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
-                    <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="
+                  bg-image
+                  hover-zoom
+                  ripple ripple-surface ripple-surface-light
+                "
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(17).jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    ></div>
                   </div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">₹61.99</h6>
+              </div>
             </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">
-                <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
-              </h6>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div
+                class="bg-image hover-zoom ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(30).jpg"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div class="mask">
+                    <div
+                      class="d-flex justify-content-start align-items-end h-100"
+                    >
+                      <h5>
+                        <span class="badge bg-primary ms-2">New</span
+                        ><span class="badge bg-success ms-2">Eco</span
+                        ><span class="badge bg-danger ms-2">-10%</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
+                </h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(23).jpg"
-                class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
-                    <h5>
-                      <span class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
-                    </h5>
-                  </div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
-            </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">
-                <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
-              </h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(17).jpg"
-                class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100"></div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
-            </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">₹61.99</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(30).jpg"
-                class="w-100" />
-              <a href="#!">
-                <div class="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
-                    <h5>
-                      <span class="badge bg-primary ms-2">New</span><span class="badge bg-success ms-2">Eco</span><span
-                        class="badge bg-danger ms-2">-10%</span>
-                    </h5>
-                  </div>
-                </div>
-                <div class="hover-overlay">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </div>
-              </a>
-            </div>
-            <div class="card-body">
-              <a href="" class="text-reset">
-                <h5 class="card-title mb-3">Product name</h5>
-              </a>
-              <a href="" class="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 class="mb-3">
-                <s>₹61.99</s><strong class="ms-2 text-danger">₹50.99</strong>
-              </h6>
-            </div>
-          </div>
+    <section class="promo">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            frameborder="0"
+            src="https://www.youtube.com/embed/jk6sz25OZgw"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="promo">
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" frameborder="0" src="https://www.youtube.com/embed/jk6sz25OZgw"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="p-5 testimonials">
-    <!-- Carousel wrapper -->
-    <!-- Carousel wrapper -->
-    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-      <!-- Inner -->
-      <div class="carousel-inner py-4">
-        <!-- Single item -->
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" style="width: 150px;" />
+    <section class="p-5 testimonials">
+      <!-- Carousel wrapper -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide text-center carousel-dark"
+        data-mdb-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
+              alt="avatar"
+              style="width: 150px"
+            />
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <h5 class="mb-3">Maria Kate</h5>
+                <p>Photographer</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  et deleniti nesciunt sint eligendi reprehenderit reiciendis,
+                  quibusdam illo, beatae quia fugit consequatur laudantium velit
+                  magnam error. Consectetur distinctio fugit doloremque.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="
+                list-unstyled
+                d-flex
+                justify-content-center
+                text-warning
+                mb-0
+              "
+            >
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+              alt="avatar"
+              style="width: 150px"
+            />
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <h5 class="mb-3">John Doe</h5>
+                <p>Web Developer</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  et deleniti nesciunt sint eligendi reprehenderit reiciendis.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="
+                list-unstyled
+                d-flex
+                justify-content-center
+                text-warning
+                mb-0
+              "
+            >
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+              alt="avatar"
+              style="width: 150px"
+            />
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
                 <h5 class="mb-3">Anna Deynah</h5>
                 <p>UX Designer</p>
                 <p class="text-muted">
                   <i class="fas fa-quote-left pe-2"></i>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                  officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  et deleniti nesciunt sint eligendi reprehenderit reiciendis,
+                  quibusdam illo, beatae quia fugit consequatur laudantium velit
+                  magnam error. Consectetur distinctio fugit doloremque.
                 </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">John Doe</h5>
-                <p>Web Developer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam, nisi ut aliquid commodi.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li>
-                    <i class="fas fa-star-half-alt fa-sm"></i>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="far fa-star fa-sm"></i></li>
-                </ul>
               </div>
             </div>
+            <ul
+              class="
+                list-unstyled
+                d-flex
+                justify-content-center
+                text-warning
+                mb-0
+              "
+            >
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
           </div>
         </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">John Doe</h5>
-                <p>UX Designer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                  officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">Alex Rey</h5>
-                <p>Web Developer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam, nisi ut aliquid commodi.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li>
-                    <i class="fas fa-star-half-alt fa-sm"></i>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="far fa-star fa-sm"></i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">Anna Deynah</h5>
-                <p>UX Designer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-                  officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">John Doe</h5>
-                <p>Web Developer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam, nisi ut aliquid commodi.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li>
-                    <i class="fas fa-star-half-alt fa-sm"></i>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-circle shadow-1-strong mb-4"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(7).jpg" alt="avatar" style="width: 150px;" />
-                <h5 class="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
-                <p class="text-muted">
-                  <i class="fas fa-quote-left pe-2"></i>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti.
-                </p>
-                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="fas fa-star fa-sm"></i></li>
-                  <li><i class="far fa-star fa-sm"></i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Inner -->
-      <!-- Controls -->
-      <div class="d-flex justify-content-center mb-4">
-        <button class="carousel-control-prev position-relative" type="button"
-          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
-          <i class="fas fa-chevron-left carousel-control-prev-icon" aria-hidden="true"></i>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-mdb-target="#carouselExampleControls"
+          data-mdb-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next position-relative" type="button"
-          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
-          <i class="fas fa-chevron-right carousel-control-next-icon" aria-hidden="true"></i>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-mdb-target="#carouselExampleControls"
+          data-mdb-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <!-- Carousel wrapper -->
-  </section>
+      <!-- Carousel wrapper -->
+    </section>
 
-  <!-- Footer -->
-  <footer class="myfooter text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section>
-        <!-- Phone -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fas fa-phone-alt"></i></a>
+    <!-- Footer -->
+    <footer class="myfooter text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section>
+          <!-- Phone -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fas fa-phone-alt"></i
+          ></a>
 
-        <!-- Location -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fas fa-map-marker-alt"></i></a>
+          <!-- Location -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fas fa-map-marker-alt"></i
+          ></a>
 
-        <!-- Facebook -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <!-- Facebook -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
-        <!-- Twitter -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
 
-        <!-- Instagram -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
 
-        <!-- Linkedin -->
-        <a class="btn btn-primary m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+          <!-- Linkedin -->
+          <a class="btn btn-primary m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center text-white p-3">
-      Copyright © 2021 <a class="text-white" href="https://iesdevs.github.io/craft">Craft Allies</a>. All rights
-      reserved.
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+      <!-- Copyright -->
+      <div class="text-center text-white p-3">
+        Copyright © 2021
+        <a class="text-white" href="https://iesdevs.github.io/craft"
+          >Craft Allies</a
+        >. All rights reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
 
-  <!-- MDB -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
-  <!--Custom-->
-  <script src="scripts/main.js"></script>
-</body>
-
+    <!--Custom-->
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
